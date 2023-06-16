@@ -1,12 +1,12 @@
-function App() {
-  return (
-    <div className="App">
-     
-     <h1>Loading Tool Tip</h1>
+import React from 'react';
+import Tooltip from './Tooltip';
 
-     <div className="tool-tip">Hover over Me!</div>
+const App = () => {
+  return (
+    <div>
+      <Tooltip></Tooltip>
     </div>
   );
-}
+};
 
 export default App;

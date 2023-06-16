@@ -11,12 +11,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.tool-tip{
-  color: red;
-  margin-left: 45%;
-  margin-top: 200px;
-}
-.tool-tip:hover{
-  color: gray;
-  cursor: pointer;
-}
+
