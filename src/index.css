@@ -12,3 +12,22 @@ code {
     monospace;
 }
 
+.toot-tip{
+  opacity: 0;
+}
+.toot-tip:hover{
+  opacity: 1;
+  cursor: pointer;
+  background-color: black;
+  width:130px;
+  color: white;
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  transition: opacity 1s;
+}
+.visible-component{
+  position: relative;
+  margin-left: 45%;
+  margin-top: 10%;
+}
