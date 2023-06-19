@@ -12,22 +12,104 @@ code {
     monospace;
 }
 
-.toot-tip{
+.tool-tip{
   opacity: 0;
 }
-.toot-tip:hover{
-  opacity: 1;
+
+.visible-component{
+  position: relative;
+  margin-left: 45%;
+  margin-top: 10%;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  /* width: 200px;
+  height:50px;
+  border: 1px solid red;  */
+}
+
+.visible-component:hover{
   cursor: pointer;
-  background-color: black;
-  width:130px;
+}
+
+.visible-component:hover .tool-tip{
+  opacity: 1;
+  background-color: gray;
+  width:200px;
   color: white;
   position: absolute;
   text-align: center;
   padding: 5px;
   transition: opacity 1s;
+  border-radius: 5px;
+  /* font-weight: bold; */
 }
-.visible-component{
-  position: relative;
-  margin-left: 45%;
-  margin-top: 10%;
+
+.tooltip-right{ 
+     margin-left: 16.5%;
+    position: absolute;
+    margin-top: -4.5%;
+} 
+
+ /* For arrow mark */
+.visible-component .tooltip-right::after{
+  content: " ";
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent gray transparent transparent;
+  position: absolute;
+}
+
+.tooltip-left{
+  margin-left: -31%;
+  position: absolute;
+  margin-top: -4.5%;
+}
+
+.visible-component .tooltip-left::after{
+  content: " ";
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  position: absolute;
+  border-color: transparent  transparent transparent gray;
+}
+
+.tooltip-bottom{
+  position: absolute;
+  margin-top: 1%;
+  margin-left: -45px;
+}
+
+.visible-component .tooltip-bottom::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%; 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  position: absolute;
+  border-color: transparent transparent gray transparent;
+}
+
+.tooltip-top{
+  position: absolute;
+  margin-top: -10.5%;
+  margin-left: -45px;
+}
+
+.visible-component .tooltip-top::after {
+  content: " ";
+  top: 100%; 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  position: absolute;
+  border-color: gray transparent transparent transparent;
 }
